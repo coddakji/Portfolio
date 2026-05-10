@@ -17,312 +17,201 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page-shell">
+    <div class="site-shell">
       <header class="topbar">
-        <a class="brand" href="#top">KIM HYEON JU</a>
-        <nav class="topnav" aria-label="주요 메뉴">
-          <a href="#featured">Featured</a>
-          <a href="#experience">Experience</a>
-          <a href="#gallery">Portfolio</a>
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="#philosophy">Philosophy</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <a class="brand" href="#top">KIM<br />HYEON JU</a>
+        <a class="menu-mark" href="#portfolio" aria-label="포트폴리오 섹션으로 이동">
+          <span></span>
+          <span></span>
+        </a>
       </header>
 
       <main id="top">
         <section class="hero">
-          <div class="hero-copy">
-            <p class="eyebrow">PIXEL ARTIST / GAME GRAPHIC DESIGNER</p>
-            <h1>김현주의 도트 작업은<br />게임의 성격과 팀의 호흡을 함께 만듭니다</h1>
-            <p class="hero-text">
-              캐릭터 스프라이트, 몬스터 디자인, 전투 애니메이션, 이펙트,
-              타일셋, UI 그래픽까지. 빠른 적응력과 유연한 소통으로 팀의 시너지를
-              극대화하는 도트 아티스트 김현주의 포트폴리오입니다.
+          <div class="hero__portrait">
+            <div class="portrait-frame">
+              <div class="portrait-art" aria-hidden="true">
+                <span class="portrait-hair"></span>
+                <span class="portrait-face"></span>
+                <span class="portrait-neck"></span>
+                <span class="portrait-cloak"></span>
+                <span class="portrait-eye portrait-eye--left"></span>
+                <span class="portrait-eye portrait-eye--right"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__content">
+            <p class="hero__kicker">PIXEL ARTIST / GAME GRAPHIC DESIGNER</p>
+            <h1 class="hero__title"><span>KIM</span><span>HYEON JU</span></h1>
+            <p class="hero__subtitle">도트 아티스트 김현주</p>
+            <p class="hero__intro">
+              캐릭터, 몬스터, 전투 애니메이션, 이펙트, 배경 소스와 UI 그래픽까지.
+              게임의 성격과 팀의 호흡을 함께 만드는 도트 작업을 지향합니다.
             </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#gallery">대표 작업 보기</a>
-              <a class="button button-secondary" href="#projects">프로젝트 보기</a>
-            </div>
-            <ul class="hero-stats" aria-label="작업 요약">
-              <li>
-                <strong>10+</strong>
-                <span>Projects & Contests</span>
-              </li>
-              <li>
-                <strong>2</strong>
-                <span>R&amp;D Participations</span>
-              </li>
-              <li>
-                <strong>100%</strong>
-                <span>Main Art Ownership</span>
-              </li>
-            </ul>
-          </div>
 
-          <div class="hero-panel">
-            <div class="screen-card">
-              <div class="screen-card__header">
-                <span>LIVE PREVIEW</span>
-                <span>PIXEL UI</span>
-              </div>
-              <div class="screen-card__art">
-                <div class="pixel-scene">
-                  <div class="pixel-sun"></div>
-                  <div class="pixel-mountain pixel-mountain--back"></div>
-                  <div class="pixel-mountain pixel-mountain--front"></div>
-                  <div class="pixel-character">
-                    <span class="pixel-head"></span>
-                    <span class="pixel-body"></span>
-                    <span class="pixel-sword"></span>
-                  </div>
-                  <div class="pixel-ground"></div>
-                </div>
-              </div>
-              <div class="screen-card__footer">
-                <span>Main Dot Artist</span>
-                <span>64 x 64</span>
-              </div>
+            <div class="social-strip" aria-label="주요 링크">
+              <a class="social-link" href="mailto:hello@example.com" aria-label="이메일">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 6h18v12H3z" />
+                  <path d="M3 7l9 7 9-7" />
+                </svg>
+              </a>
+              <a class="social-link" href="#portfolio" aria-label="포트폴리오">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 7h16v10H4z" />
+                  <path d="M8 5v4M16 5v4M8 17v2M16 17v2" />
+                </svg>
+              </a>
+              <a class="social-link" href="#projects" aria-label="프로젝트">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 6h14v12H5z" />
+                  <path d="M9 10h6M9 14h4" />
+                </svg>
+              </a>
+              <a class="social-link" href="#story" aria-label="작업 이야기">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 4h12v16H6z" />
+                  <path d="M9 8h6M9 12h6M9 16h4" />
+                </svg>
+              </a>
+              <a class="social-link" href="https://github.com/coddakji/Portfolio" aria-label="깃허브 저장소">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3C7 3 3 7 3 12c0 4 2.6 7.4 6.2 8.6.5.1.7-.2.7-.5v-2c-2.5.6-3-1-3-1-.4-1-.9-1.3-.9-1.3-.7-.4.1-.4.1-.4.8.1 1.3.8 1.3.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-2-.2-4-.9-4-4.2 0-.9.3-1.7.8-2.3-.1-.2-.4-1.1.1-2.2 0 0 .7-.2 2.4.9a8.1 8.1 0 0 1 4.4 0c1.6-1.1 2.3-.9 2.3-.9.5 1.1.2 2 .1 2.2.5.6.8 1.4.8 2.3 0 3.3-2 4-4 4.2.3.3.6.8.6 1.6v2.4c0 .3.2.6.7.5A9 9 0 0 0 21 12c0-5-4-9-9-9Z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-buttons">
+              <a class="hero-button" href="#portfolio">PORTFOLIO</a>
+              <a class="hero-button" href="#projects">MY PROJECTS</a>
+              <a class="hero-button" href="#story">WORK STORY</a>
+              <a class="hero-button" href="#contact">CONTACT ME</a>
             </div>
           </div>
         </section>
 
-        <section class="section" id="featured">
-          <div class="section-heading">
-            <p class="section-kicker">Featured Work</p>
-            <h2>이력서에서 바로 끌어온 대표 강점</h2>
-          </div>
-          <div class="featured-grid">
-            <article class="feature-card feature-card--wide tone-gold">
-              <div class="feature-card__meta">
-                <span>Pixel Girl Raising</span>
-                <span>Main Dot Designer</span>
-              </div>
-              <h3>1만+ 다운로드 모바일 RPG에서 메인 도트 디자이너 경험</h3>
-            </article>
-            <article class="feature-card tone-mint">
-              <div class="feature-card__meta">
-                <span>CARE-i</span>
-                <span>Character + BG</span>
-              </div>
-              <h3>심리치료 게임용 캐릭터 애니메이션과 배경 소스 제작</h3>
-            </article>
-            <article class="feature-card tone-coral">
-              <div class="feature-card__meta">
-                <span>Team Communication</span>
-                <span>Leadership</span>
-              </div>
-              <h3>사수 없이 팀의 유일한 도트 담당자로 파이프라인을 정리한 경험</h3>
-            </article>
-          </div>
+        <section class="stats-band" aria-label="요약 정보">
+          <article class="stat-card">
+            <strong>10+</strong>
+            <span>프로젝트 / 공모전 참여</span>
+          </article>
+          <article class="stat-card">
+            <strong>2</strong>
+            <span>국가 연구개발 참여</span>
+          </article>
+          <article class="stat-card">
+            <strong>1만+</strong>
+            <span>상용 게임 다운로드 경험</span>
+          </article>
         </section>
 
-        <section class="section" id="experience">
-          <div class="section-heading">
-            <p class="section-kicker">Experience</p>
-            <h2>실무와 산학 프로젝트를 잇는 작업 이력</h2>
+        <section class="content-section" id="portfolio">
+          <div class="section-head">
+            <p class="section-head__kicker">Portfolio</p>
+            <h2>캐릭터부터 이펙트까지, 게임에 바로 이어지는 도트 작업</h2>
           </div>
-          <div class="timeline">
-            <article class="timeline-card">
-              <p class="timeline-card__date">2026.04 - Present</p>
-              <h3>모모쿰 도트 디자이너 입사</h3>
-              <p>
-                입사 직후부터 도트 팀의 핵심 작업을 맡으며 실무 적응, 일정
-                관리, 협업 정리를 병행하고 있습니다.
-              </p>
-            </article>
-            <article class="timeline-card">
-              <p class="timeline-card__date">2025.03 - 2026.03</p>
-              <h3>제로투원게임즈 메인 도트 디자이너</h3>
-              <p>
-                1만+ 다운로드, 평점 4.7의 모바일 방치형 RPG 프로젝트에서 메인
-                도트 디자이너로 참여했습니다.
-              </p>
-            </article>
-            <article class="timeline-card">
-              <p class="timeline-card__date">2023.05 - 2024.05</p>
-              <h3>부산대학교 산학협력 CARE-i</h3>
-              <p>
-                심리치료 게임용 캐릭터 애니메이션과 배경 소스를 제작하며
-                인디 시뮬레이션 프로젝트의 그래픽 파트를 담당했습니다.
-              </p>
-            </article>
-            <article class="timeline-card">
-              <p class="timeline-card__date">2021 - 2025</p>
-              <h3>전주대학교 게임콘텐츠학과</h3>
-              <p>
-                교내외 개인 및 팀 프로젝트, 공모전, 국가 연구개발 참여를 통해
-                도트 그래픽과 협업 경험을 축적했습니다.
-              </p>
-            </article>
+          <div class="filter-row" role="tablist" aria-label="작업 카테고리">
+            <button class="filter-chip is-active" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="characters">Characters</button>
+            <button class="filter-chip" data-filter="animations">Animations</button>
+            <button class="filter-chip" data-filter="environments">Backgrounds</button>
+            <button class="filter-chip" data-filter="ui">UI / Icons</button>
           </div>
+          <div class="portfolio-grid" id="galleryGrid" aria-live="polite"></div>
         </section>
 
-        <section class="section" id="gallery">
-          <div class="section-heading section-heading--split">
-            <div>
-              <p class="section-kicker">Portfolio Gallery</p>
-              <h2>실제 이력서 내용을 기준으로 정리한 작업 유형</h2>
-            </div>
-            <div class="filter-bar" role="tablist" aria-label="작품 분류">
-              <button class="filter-chip is-active" data-filter="all">All</button>
-              <button class="filter-chip" data-filter="characters">Characters</button>
-              <button class="filter-chip" data-filter="animations">Animations</button>
-              <button class="filter-chip" data-filter="environments">Environments</button>
-              <button class="filter-chip" data-filter="ui">UI / Icons</button>
-            </div>
+        <section class="content-section" id="projects">
+          <div class="section-head">
+            <p class="section-head__kicker">Projects</p>
+            <h2>이력서 기준으로 다시 정리한 주요 프로젝트</h2>
           </div>
-          <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
-        </section>
-
-        <section class="section" id="projects">
-          <div class="section-heading">
-            <p class="section-kicker">Game Projects</p>
-            <h2>웹사이트에서 바로 읽히게 재구성한 주요 프로젝트</h2>
-          </div>
-          <div class="project-list">
-            <article class="project-card">
-              <div class="project-card__thumb tone-gold"></div>
-              <div class="project-card__body">
-                <p class="project-label">Mobile Idle RPG</p>
+          <div class="project-stack">
+            <article class="project-feature">
+              <div class="project-feature__art tone-gold"></div>
+              <div class="project-feature__copy">
+                <p class="project-feature__label">Mobile Idle RPG</p>
                 <h3>픽셀소녀 키우기</h3>
                 <p>
-                  메인 도트 디자이너로 참여한 상용 프로젝트. 캐릭터 방향성,
-                  리소스 정리, 실무 협업, 도트 파이프라인 관리 경험이 집약된 작업입니다.
+                  제로투원게임즈에서 메인 도트 디자이너로 참여한 상용 프로젝트입니다.
+                  캐릭터 방향성, 도트 리소스 정리, 실무 협업과 작업 체계를 직접 끌고 갔습니다.
                 </p>
               </div>
             </article>
-            <article class="project-card">
-              <div class="project-card__thumb tone-mint"></div>
-              <div class="project-card__body">
-                <p class="project-label">Indie Simulation</p>
+            <article class="project-feature">
+              <div class="project-feature__art tone-mint"></div>
+              <div class="project-feature__copy">
+                <p class="project-feature__label">Indie Simulation</p>
                 <h3>CARE-i</h3>
                 <p>
-                  방황하는 청소년을 위한 심리치료 게임. 캐릭터 애니메이션,
-                  배경 소스 제작, 인게임 그래픽을 중심으로 참여했습니다.
+                  부산대학교 산학협력 프로젝트로 진행된 심리치료 게임입니다.
+                  캐릭터 애니메이션과 배경 소스를 제작하며 게임의 정서와 가독성을 함께 설계했습니다.
                 </p>
               </div>
             </article>
-            <article class="project-card">
-              <div class="project-card__thumb tone-coral"></div>
-              <div class="project-card__body">
-                <p class="project-label">Puzzle Escape PC Game</p>
-                <h3>LOST CHILD</h3>
+            <article class="project-feature">
+              <div class="project-feature__art tone-coral"></div>
+              <div class="project-feature__copy">
+                <p class="project-feature__label">Student / Jam Projects</p>
+                <h3>LOST CHILD, Ninja RUN, 오늘도 평화롭게</h3>
                 <p>
-                  졸업작품 퍼즐 탈출 게임. 2D 애니메이션 제작을 맡으며
-                  장면 연출과 감정 전달에 집중했습니다.
-                </p>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-card__thumb tone-gold"></div>
-              <div class="project-card__body">
-                <p class="project-label">Hyper Casual</p>
-                <h3>Ninja RUN</h3>
-                <p>
-                  메인 아트와 팀장을 맡아 요괴를 무찌르는 횡스크롤 런 게임의
-                  캐릭터 애니메이션과 콘셉트 방향을 이끌었습니다.
-                </p>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-card__thumb tone-mint"></div>
-              <div class="project-card__body">
-                <p class="project-label">Global Game Jam</p>
-                <h3>오늘도 평화롭게</h3>
-                <p>
-                  캐릭터 디자인, 컷신, 타이틀, 기본 그래픽 소스를 제작한
-                  사이드 하이퍼캐주얼 프로젝트입니다.
-                </p>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-card__thumb tone-coral"></div>
-              <div class="project-card__body">
-                <p class="project-label">Mobile Puzzle RPG</p>
-                <h3>돌격! 청소대작전!</h3>
-                <p>
-                  2D 원화 메인 아트와 애니메이션 제작을 담당하며
-                  게임의 성장 스토리와 시각적 매력을 함께 설계했습니다.
+                  졸업작품, 하이퍼캐주얼 프로젝트, 게임잼 참여작을 통해 컷신,
+                  메인 아트, 애니메이션, 팀 리딩 경험까지 폭넓게 쌓았습니다.
                 </p>
               </div>
             </article>
           </div>
         </section>
 
-        <section class="section section-about" id="about">
-          <div class="about-copy">
-            <p class="section-kicker">About</p>
-            <h2>신뢰받는 아티스트가 되기까지 쌓아온 태도와 방식</h2>
-            <p>
-              사수 없이 팀의 유일한 도트 담당자가 되었던 시기, 프로젝트가
-              흔들릴 때 팀원들과 속도를 다시 맞췄던 경험, 그리고 픽셀 하나의
-              차이가 캐릭터의 인상을 바꾼다고 믿는 시선이 지금의 작업 방식을 만들었습니다.
-            </p>
+        <section class="content-section" id="story">
+          <div class="section-head">
+            <p class="section-head__kicker">Work Story</p>
+            <h2>도트 작업을 대하는 태도와 협업 방식</h2>
           </div>
-          <div class="about-notes">
-            <div class="note-card">
-              <span class="note-label">Core Skills</span>
-              <p>Character Sprite, Monster Concept, FX Animation, BG Source, UI Graphic</p>
-            </div>
-            <div class="note-card">
-              <span class="note-label">Tools</span>
-              <p>Aseprite, Photoshop, Clip Studio, Confluence-based asset organization</p>
-            </div>
-            <div class="note-card">
-              <span class="note-label">Education & Awards</span>
-              <p>전주대학교 게임콘텐츠학과 졸업, 2022 한국일러스트레이션학회 국제공모전 특선</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="philosophy">
-          <div class="section-heading">
-            <p class="section-kicker">Work Philosophy</p>
-            <h2>도트는 혼자 완성하는 그림이 아니라, 팀과 함께 다듬는 언어입니다</h2>
-          </div>
-          <div class="essay-grid">
-            <article class="essay-card">
-              <h3>사수 없이 홀로, 도트 팀을 이끌다</h3>
+          <div class="story-grid">
+            <article class="story-card">
+              <h3>사수 없이 팀의 도트 파트를 이끌다</h3>
               <p>
-                선배 디자이너의 갑작스러운 퇴사 이후 별도 인수인계 없이 메인
-                아티스트 역할을 이어받았고, 기획자와 프로그래머와의 정리를 통해
-                작업 방향과 명명 규칙, 레이어 체계를 직접 세웠습니다.
+                갑작스러운 공백 이후 메인 아티스트 역할을 맡게 되었고,
+                방향성 정리와 리소스 명명 규칙, 레이어 체계를 직접 세워 팀의 흐름을 유지했습니다.
               </p>
             </article>
-            <article class="essay-card">
-              <h3>혼자보다는 함께, 협업을 배운 시간</h3>
+            <article class="story-card">
+              <h3>혼자 빠른 것보다 함께 가는 속도</h3>
               <p>
-                대학 프로젝트에서 속도만 앞세운 작업이 팀워크 붕괴로 이어졌던
-                경험 이후, 진행 상황 공유와 방향성 회의를 통해 함께 가는 속도를
-                가장 중요한 기준으로 삼게 되었습니다.
+                대학 시절 팀워크 붕괴를 겪은 이후, 작업 속도보다 공유와 조율을
+                우선하는 방식을 택했습니다. 지금은 팀원들이 함께 움직일 수 있는 구조를 중요하게 봅니다.
               </p>
             </article>
-            <article class="essay-card">
-              <h3>도트 아트를 보는 나의 시선</h3>
+            <article class="story-card">
+              <h3>픽셀 하나가 바꾸는 인상</h3>
               <p>
-                픽셀 하나의 변화가 캐릭터와 몬스터의 개성을 바꾼다고 믿습니다.
-                그래서 피드백을 적극 반영하며, 게임에 어울리는 개성과 최적화를
-                동시에 살리는 디자인을 목표로 작업합니다.
+                도트는 작은 수정 하나로 캐릭터와 몬스터의 성격이 달라집니다.
+                그래서 피드백을 적극 반영하며, 게임성과 개성을 함께 살리는 결과를 목표로 합니다.
               </p>
             </article>
           </div>
         </section>
 
-        <section class="section contact-section" id="contact">
-          <div class="contact-box">
-            <p class="section-kicker">Contact</p>
-            <h2>실제 제출용에서는 이 자리에 연락 채널과 포트폴리오 링크를 연결합니다</h2>
-            <p>
-              PDF에 있던 개인 정보 전체를 그대로 노출하지 않도록, 웹에서는
-              공개 가능한 이메일과 포트폴리오 링크만 정리해 두는 구성을 추천합니다.
-            </p>
+        <section class="content-section" id="contact">
+          <div class="section-head">
+            <p class="section-head__kicker">Contact</p>
+            <h2>제출용 버전에서는 이 영역에 실제 링크와 메일을 연결합니다</h2>
+          </div>
+          <div class="contact-panel">
+            <div>
+              <p>
+                웹 공개에서는 주소나 생년월일 같은 민감한 개인정보는 줄이고,
+                이메일과 외부 포트폴리오 링크만 정리하는 구성을 추천합니다.
+              </p>
+            </div>
             <div class="contact-links">
-              <a href="mailto:hello@example.com">hello@example.com</a>
-              <a href="#">Portfolio PDF</a>
-              <a href="#">Notion / Art Archive</a>
-              <a href="#">GitHub Pages</a>
+              <a href="mailto:hello@example.com">Email</a>
+              <a href="https://github.com/coddakji/Portfolio">GitHub</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#projects">Projects</a>
             </div>
           </div>
         </section>
@@ -330,9 +219,7 @@
     </div>
 
     <dialog class="lightbox" id="lightbox">
-      <button class="lightbox__close" id="lightboxClose" aria-label="닫기">
-        CLOSE
-      </button>
+      <button class="lightbox__close" id="lightboxClose" aria-label="닫기">CLOSE</button>
       <div class="lightbox__panel">
         <div class="lightbox__art" id="lightboxArt"></div>
         <div class="lightbox__copy">
