@@ -3,61 +3,61 @@ const galleryItems = [
     id: 1,
     category: "characters",
     type: "Character Sprite",
-    title: "판타지 세계관 캐릭터 컨셉",
+    title: "판타지 캐릭터 도트 컨셉",
     description:
-      "Aseprite 기반 캐릭터 컨셉과 플레이어블 도트 작업을 대표하는 섹션입니다.",
-    specs: ["64 x 64", "8-direction concept", "Aseprite workflow"],
+      "플레이어블 캐릭터와 주요 NPC에 적용할 수 있는 도트 컨셉과 실루엣 설계 중심 작업입니다.",
+    specs: ["Aseprite", "캐릭터 컨셉", "플레이어블 스프라이트"],
     artClass: "art-characters",
   },
   {
     id: 2,
+    category: "characters",
+    type: "Monster Design",
+    title: "몬스터 컨셉과 전투용 스프라이트",
+    description:
+      "판타지 세계관 속 몬스터의 성격을 도트로 정리하고, 전투에서 읽히는 움직임까지 고려한 작업입니다.",
+    specs: ["몬스터 디자인", "전투 가독성", "도트 개성"],
+    artClass: "art-characters",
+  },
+  {
+    id: 3,
     category: "animations",
     type: "Combat Animation",
     title: "캐릭터 이펙트 애니메이션",
     description:
-      "전투 리듬과 타격감을 드러내는 캐릭터 이펙트 및 액션 애니메이션 영역입니다.",
-    specs: ["12 frames", "Combat timing", "GIF / spritesheet"],
+      "타격감과 리듬을 드러내는 액션용 도트 애니메이션. 게임 플레이 속도에 맞춘 프레임 설계를 강조합니다.",
+    specs: ["전투 리듬", "이펙트 연출", "프레임 타이밍"],
     artClass: "art-animations",
-  },
-  {
-    id: 3,
-    category: "environments",
-    type: "Environment Tileset",
-    title: "CARE-i 배경 소스 제작",
-    description:
-      "심리치료 게임 프로젝트에서 제작한 인게임 배경 소스와 환경 그래픽을 정리하는 자리입니다.",
-    specs: ["BG source", "In-game asset", "Simulation tone"],
-    artClass: "art-environments",
   },
   {
     id: 4,
-    category: "ui",
-    type: "UI Icon Set",
-    title: "게임 UI 그래픽",
+    category: "animations",
+    type: "Cutscene Motion",
+    title: "횡스크롤 컷신과 액션 연출",
     description:
-      "게임 플레이 흐름을 해치지 않도록 가독성과 도트 감성을 함께 살린 UI 작업입니다.",
-    specs: ["HUD asset", "Readable icon", "Game-facing UI"],
-    artClass: "art-ui",
+      "게임잼과 학생 프로젝트에서 쌓은 컷신, 런 액션, 사이드뷰 연출 감각을 담는 구역입니다.",
+    specs: ["사이드뷰 연출", "컷신 모션", "하이퍼캐주얼 템포"],
+    artClass: "art-animations",
   },
   {
     id: 5,
-    category: "characters",
-    type: "NPC Portrait",
-    title: "몬스터 디자인",
+    category: "environments",
+    type: "Background Source",
+    title: "CARE-i 배경 소스 제작",
     description:
-      "판타지 세계관 몬스터 컨셉과 도트 스프라이트 설계를 보여주는 작업 분류입니다.",
-    specs: ["Monster concept", "Sprite design", "Fantasy setting"],
-    artClass: "art-characters",
+      "심리치료 게임의 분위기를 해치지 않도록 차분한 색감과 정보량을 조절한 배경 작업입니다.",
+    specs: ["배경 소스", "정서적 톤", "인게임 사용"],
+    artClass: "art-environments",
   },
   {
     id: 6,
-    category: "animations",
-    type: "FX Animation",
-    title: "횡스크롤 액션 연출",
+    category: "ui",
+    type: "UI Graphic",
+    title: "게임 UI와 아이콘 그래픽",
     description:
-      "Ninja RUN, 오늘도 평화롭게 같은 프로젝트에서 드러난 액션 연출 감각을 담는 영역입니다.",
-    specs: ["Side-scroll action", "Cutscene motion", "Hyper casual pace"],
-    artClass: "art-animations",
+      "플레이 흐름을 끊지 않도록 읽히는 UI를 만들면서도, 도트 감각이 살아 있도록 정리한 작업 분류입니다.",
+    specs: ["가독성", "HUD 그래픽", "아이콘 세트"],
+    artClass: "art-ui",
   },
 ];
 
@@ -81,10 +81,10 @@ function renderGallery(filter = "all") {
 
   items.forEach((item) => {
     const card = document.createElement("article");
-    card.className = "gallery-card";
+    card.className = "portfolio-card";
     card.innerHTML = `
-      <div class="gallery-card__art ${item.artClass}" data-label="${item.type}"></div>
-      <div class="gallery-card__body">
+      <div class="portfolio-card__art ${item.artClass}" data-label="${item.type}"></div>
+      <div class="portfolio-card__body">
         <h3>${item.title}</h3>
         <p>${item.description}</p>
       </div>
