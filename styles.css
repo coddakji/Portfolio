@@ -486,9 +486,45 @@ button {
   gap: 18px;
 }
 
+.timeline,
+.essay-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
 .project-card {
   overflow: hidden;
   box-shadow: var(--pixel-shadow);
+}
+
+.timeline-card,
+.essay-card {
+  padding: 20px;
+  border: 2px solid var(--line);
+  background: rgba(255, 252, 244, 0.96);
+  box-shadow: var(--pixel-shadow);
+}
+
+.timeline-card h3,
+.essay-card h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.timeline-card p,
+.essay-card p {
+  margin: 12px 0 0;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.timeline-card__date {
+  margin: 0 0 12px;
+  color: var(--coral);
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.56rem;
+  line-height: 1.8;
 }
 
 .project-card__thumb {
@@ -713,6 +749,8 @@ button {
   }
 
   .featured-grid,
+  .timeline,
+  .essay-grid,
   .gallery-grid,
   .project-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -744,6 +782,8 @@ button {
 
   .hero-stats,
   .featured-grid,
+  .timeline,
+  .essay-grid,
   .gallery-grid,
   .project-list {
     grid-template-columns: 1fr;
